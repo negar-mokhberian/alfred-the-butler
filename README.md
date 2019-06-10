@@ -27,7 +27,24 @@ Extract entities using Spacy package from the input text.
 - filter (List[str]): the types of entities to be extracted
 ##### Returns:
 - entities (List[str])
+### Sample Input & Output 
+#### Sample code
+```
+import entity_extractor
 
+entity_extractor = entity_extractor.EntityExtractor()
+file_path = 'sample_doc.txt'
+
+with open (file_path, 'r') as file:
+        input_doc = file.read()
+        print(input_doc)
+        print('^^^^dbpedia^^^^')
+        print(entity_extractor.extract_entities_dbpedia(text=input_doc, confidence = 0.2))
+        print('^^^^spacy^^^^')
+        print(entity_extractor.extract_entities_spacy(text=input_doc))
+
+```
+#### Output
 ```
 A total 330,000 compressors were imported to China in July 2005, down almost 50 pct year-on-year, it was reported on September 12, 2005. 
 
