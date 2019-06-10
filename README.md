@@ -27,3 +27,17 @@ Extract entities using Spacy package from the input text.
 - filter (List[str]): the types of entities to be extracted
 ##### Returns:
 - entities (List[str])
+
+```
+A total 330,000 compressors were imported to China in July 2005, down almost 50 pct year-on-year, it was reported on September 12, 2005. 
+
+ The reason for the decrease is the large inventories of compressors accumulated at Chinese air-conditioner manufacturers. 
+
+ The biggest sources of China's compressor imports were Japan, Malaysia and Taiwan during the month. Malaysia alone imported 60,000 compressors to China in July 2005, up 175 pct year-on-year. The other two major sources of compressors saw a decrease of over 30 pct in their imports to China. 
+
+ The biggest importer in July was air-conditioner manufacturer Shanghai Sharp, with some 53,000 imported compressors, followed by Fujitsu General, Haier and Gree. 
+^^^^dbpedia^^^^
+['China', 'Chinese', 'China', 'Japan', 'Malaysia', 'Taiwan', 'Malaysia', 'China', 'China', 'Shanghai', 'Sharp', 'Fujitsu General', 'Haier']
+^^^^spacy^^^^
+['China', 'Chinese', 'China', 'Japan', 'Malaysia', 'Taiwan', 'Malaysia', 'China', 'China', 'Shanghai Sharp', 'Fujitsu General', 'Haier', 'Gree']
+```
