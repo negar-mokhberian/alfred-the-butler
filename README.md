@@ -16,7 +16,7 @@ entity_extractor.extract_entities_dbpedia(text=input_doc, confidence = 0.6)
 - filter (List[str]): The types of entities to be extracted.
 ##### Returns:
 - entities (List[str])
-####Spacy
+### Spacy
 Extract entities using Spacy package from the input text.
 ##### Example:
 ```
